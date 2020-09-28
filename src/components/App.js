@@ -20,7 +20,7 @@ function App() {
       setInit(true)
     });
   }, [])
-
+  console.log(userObj)
   return (
     <>
       {init ? <AppRouter isLoggedIn={isLoggedIn} userObj={userObj}></AppRouter> : "Initializing...."}
