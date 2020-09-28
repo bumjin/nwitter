@@ -6,7 +6,7 @@ import Navigation from "components/Navigation";
 import Profile from "routes/Profile";
 
 //hooks component
-const AppRouter = ({ isLoggedIn, userObj }) => {
+const AppRouter = ({ isLoggedIn, userObj, refreshUser }) => {
     return (
         <Router>
             {isLoggedIn && <Navigation userObj={userObj} />}
@@ -18,7 +18,7 @@ const AppRouter = ({ isLoggedIn, userObj }) => {
                                 <Home userObj={userObj}></Home>
                             </Route>
                             <Route exact path="/profile">
-                                <Profile userObj={userObj}></Profile>
+                                <Profile userObj={userObj} refreshUser={refreshUser}></Profile>
                             </Route>
                             <Redirect from="*" to="/"></Redirect>
                         </>

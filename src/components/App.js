@@ -12,7 +12,12 @@ function App() {
       if (user) {
         // User is signed in.
         setIsLoggedIn(true);
-        setUserObj(user);
+        //setUserObj(user);
+        setUserObj({
+          displayName: user.displayName,
+          uid: user.uid,
+          updateProfile: (args) => user.updateProfile(args)
+        });
       } else {
         // No user is signed in.
         setIsLoggedIn(false);
@@ -20,10 +25,18 @@ function App() {
       setInit(true)
     });
   }, [])
-  console.log(userObj)
+  const refreshUser = () => {
+    const user = authService.currentUser;
+    //setUserObj(Object.assign({}, user))
+    setUserObj({
+      displayName: user.displayName,
+      uid: user.uid,
+      updateProfile: (args) => user.updateProfile(args)
+    })
+  }
   return (
     <>
-      {init ? <AppRouter isLoggedIn={isLoggedIn} userObj={userObj}></AppRouter> : "Initializing...."}
+      {init ? <AppRouter isLoggedIn={isLoggedIn} userObj={userObj} refreshUser={refreshUser}></AppRouter> : "Initializing...."}
       <footer>&copy;{new Date().getFullYear()} Nwitter</footer>
     </>
   );
