@@ -6,7 +6,7 @@ import { v4 as uuid4 } from "uuid"
 const Home = ({ userObj }) => {
     const [nweet, setNweet] = useState("")
     const [nweets, setNweets] = useState([])
-    const [attachment, setAttachment] = useState()
+    const [attachment, setAttachment] = useState("")
     const onFileChange = (event) => {
         const { target: { files } } = event;
         const theFile = files[0];
@@ -34,7 +34,7 @@ const Home = ({ userObj }) => {
     const onSubmit = async (event) => {
         event.preventDefault();
         let attachmentUrl = '';
-        if (attachment != '') {
+        if (attachment !== '') {
             const fileRef = storageService.ref().child(`${userObj.uid}/${uuid4()}`)
             const response = await fileRef.putString(attachment, "data_url")
             attachmentUrl = await response.ref.getDownloadURL();
