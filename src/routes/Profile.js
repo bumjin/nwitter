@@ -7,9 +7,9 @@ const Profile = ({ userObj, refreshUser }) => {
     const onLogOutClick = () => {
         authService.signOut();
         history.push("/")
+        //refreshUser();
     }
     const getMyNweets = async () => {
-        console.log(userObj.uid)
         const nweets = await dbService
             .collection("nweets")
             .where("creatorId", "==", userObj.uid)
