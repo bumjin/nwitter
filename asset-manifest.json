@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/static/css/main.a72e0f1a.chunk.css",
-    "main.js": "/static/js/main.1cb09625.chunk.js",
-    "main.js.map": "/static/js/main.1cb09625.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.85d7b3f1.js",
-    "runtime-main.js.map": "/static/js/runtime-main.85d7b3f1.js.map",
-    "static/js/2.16ab1d66.chunk.js": "/static/js/2.16ab1d66.chunk.js",
-    "static/js/2.16ab1d66.chunk.js.map": "/static/js/2.16ab1d66.chunk.js.map",
-    "index.html": "/index.html",
-    "precache-manifest.2662ad54a3dca1d43d2a76dda749925c.js": "/precache-manifest.2662ad54a3dca1d43d2a76dda749925c.js",
-    "service-worker.js": "/service-worker.js",
-    "static/css/main.a72e0f1a.chunk.css.map": "/static/css/main.a72e0f1a.chunk.css.map",
-    "static/js/2.16ab1d66.chunk.js.LICENSE.txt": "/static/js/2.16ab1d66.chunk.js.LICENSE.txt"
+    "main.css": "https://bumjin.github.io/nwitter/static/css/main.a72e0f1a.chunk.css",
+    "main.js": "https://bumjin.github.io/nwitter/static/js/main.d2e8348f.chunk.js",
+    "main.js.map": "https://bumjin.github.io/nwitter/static/js/main.d2e8348f.chunk.js.map",
+    "runtime-main.js": "https://bumjin.github.io/nwitter/static/js/runtime-main.d94b6cc5.js",
+    "runtime-main.js.map": "https://bumjin.github.io/nwitter/static/js/runtime-main.d94b6cc5.js.map",
+    "static/js/2.5812ba49.chunk.js": "https://bumjin.github.io/nwitter/static/js/2.5812ba49.chunk.js",
+    "static/js/2.5812ba49.chunk.js.map": "https://bumjin.github.io/nwitter/static/js/2.5812ba49.chunk.js.map",
+    "index.html": "https://bumjin.github.io/nwitter/index.html",
+    "precache-manifest.83cf46018817b69e5845724794154e46.js": "https://bumjin.github.io/nwitter/precache-manifest.83cf46018817b69e5845724794154e46.js",
+    "service-worker.js": "https://bumjin.github.io/nwitter/service-worker.js",
+    "static/css/main.a72e0f1a.chunk.css.map": "https://bumjin.github.io/nwitter/static/css/main.a72e0f1a.chunk.css.map",
+    "static/js/2.5812ba49.chunk.js.LICENSE.txt": "https://bumjin.github.io/nwitter/static/js/2.5812ba49.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.85d7b3f1.js",
-    "static/js/2.16ab1d66.chunk.js",
+    "static/js/runtime-main.d94b6cc5.js",
+    "static/js/2.5812ba49.chunk.js",
     "static/css/main.a72e0f1a.chunk.css",
-    "static/js/main.1cb09625.chunk.js"
+    "static/js/main.d2e8348f.chunk.js"
   ]
 }
